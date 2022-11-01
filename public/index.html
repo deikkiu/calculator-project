@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <!-- Normalize CSS -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://necolas.github.io/normalize.css/latest/normalize.css"
+    />
+    <!-- Icon-->
+    <link rel="icon" href="../src/icons/calculator-icon.png" />
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="../src/style/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calc-mob-first">
+        <!-- Menu -->
+        <nav class="calc-nav-bar">
+          <div class="menu">
+            <label for="check">
+              <input type="checkbox" id="check" />
+              <span></span>
+              <span></span>
+              <span></span>
+            </label>
+            <button type="button" class="nav-bar-buttons change_button">
+              Calculator
+            </button>
+            <button type="button" class="nav-bar-buttons change_button">
+              Conventer
+            </button>
+            <div class="change_mood">
+              <a href="">
+                <img src="../src/icons/icons8-sun-24 (1).png" alt="Mode" />
+              </a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Output screen -->
+        <div class="calc-screen">
+          <div data-calc-history class="calc_history"></div>
+          <div data-calc-total class="calc_total"></div>
+        </div>
+
+        <!-- Input function -->
+        <div class="calc-buttons">
+          <div data-all-clear class="btn ac bg-gray">AC</div>
+          <div data-delete class="btn delete bg-gray">
+            <img src="../src/icons/icons8-clear-symbol-50.png" alt="Delete" />
+          </div>
+          <div data-operation class="btn percentage bg-white">%</div>
+          <div data-operation class="btn division bg-white">/</div>
+          <div data-number class="btn seven">7</div>
+          <div data-number class="btn eight">8</div>
+          <div data-number class="btn nine">9</div>
+          <div data-operation class="btn multiplication bg-white">x</div>
+          <div data-number class="btn four">4</div>
+          <div data-number class="btn five">5</div>
+          <div data-number class="btn six">6</div>
+          <div data-operation class="btn minus bg-white">-</div>
+          <div data-number class="btn one">1</div>
+          <div data-number class="btn two">2</div>
+          <div data-number class="btn three">3</div>
+          <div data-operation class="btn plus bg-white">+</div>
+          <div data-operation class="btn plus-minus">+/-</div>
+          <div data-number class="btn zero">0</div>
+          <div data-number class="btn point">.</div>
+          <div data-equals class="btn equally bg-white">=</div>
+        </div>
+      </div>
+    </div>
+    <!-- JS Script -->
+    <script src="../src/js/script.js"></script>
+  </body>
+</html>
